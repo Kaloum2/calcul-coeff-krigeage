@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-26T19:56:18.314Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56" etag="QXQI0-5P5YFqR3-K7ZrT" version="20.6.0" type="gitlab">
+<mxfile host="app.diagrams.net" modified="2022-11-27T22:39:51.725Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="EiY0j1IW8e0DD18Jc4w9" version="20.6.0" type="github">
   <diagram id="sYHyCNx4WKxojQXzPekd" name="Page-1">
-    <mxGraphModel dx="460" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -119,6 +119,146 @@
         </mxCell>
         <mxCell id="pj0DbOwcFsnZvKkg855B-4" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="60" y="300" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-1" value="Calcul de la surcharge océanique" style="swimlane;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="940" y="10" width="550" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-2" value="Charger le fichier BLQ.blq" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="210" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-3" value="Entrer la distance de corrélation en km" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="196.25" y="168" width="127.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-4" value="La longitude et la latitude origine en radian" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="350" y="163" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-5" value="Entrer la date du jour dont l&#39;on veut le résultat" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="304.5" y="550" width="151" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-6" target="1NE5uKOzJmtaYLGtLC1y-48">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="745" />
+              <mxPoint x="260" y="797" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-52" value="&amp;lt;Include&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-6" target="1NE5uKOzJmtaYLGtLC1y-47">
+          <mxGeometry x="-0.4988" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="745" />
+              <mxPoint x="260" y="700" />
+              <mxPoint x="305" y="700" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-6" value="Comparer deux données" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFCC99;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="50" y="710" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-7" value="Entrer les chemins de sortie des paramètres en .txt" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="350" y="30" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-8" value="Entrer a longitude et la latitude du point dont l&#39;on veut déterminer la surcharge océanique" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="290" y="445" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-9" target="1NE5uKOzJmtaYLGtLC1y-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="140" />
+              <mxPoint x="405" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-9" target="1NE5uKOzJmtaYLGtLC1y-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="140" />
+              <mxPoint x="405" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-9" target="1NE5uKOzJmtaYLGtLC1y-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="140" />
+              <mxPoint x="260" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-35" value="&amp;lt;Include&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-9" target="1NE5uKOzJmtaYLGtLC1y-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="140" />
+              <mxPoint x="260" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-9" value="Calculer les coefficients de krigeage" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="40" y="165" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-36" value="&amp;lt;Extend&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-19" target="1NE5uKOzJmtaYLGtLC1y-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-19" value="Ajouter ou supprimer des points du fichiers BLQ.blq" style="ellipse;whiteSpace=wrap;html=1;fillColor=#99CCFF;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="250" y="258" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-40" value="&amp;lt;Extend&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-28" target="1NE5uKOzJmtaYLGtLC1y-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-43" value="&amp;lt;Include&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-28" target="1NE5uKOzJmtaYLGtLC1y-39">
+          <mxGeometry x="-0.7015" y="10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="490" />
+              <mxPoint x="240" y="395" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-28" target="1NE5uKOzJmtaYLGtLC1y-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="490" />
+              <mxPoint x="240" y="585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1NE5uKOzJmtaYLGtLC1y-1" source="1NE5uKOzJmtaYLGtLC1y-28" target="1NE5uKOzJmtaYLGtLC1y-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-28" value="Calculer les déplacements induits par la surcharge océanique" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="35" y="450" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-39" value="Charger les fichiers de" style="ellipse;whiteSpace=wrap;html=1;fillColor=#99CCFF;strokeColor=#000000;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="304.5" y="360" width="151" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-47" value="Charger le 1er fichier des déplacements&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="304.5" y="664" width="151" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-48" value="&amp;nbsp;Charger le 2eme fichier des déplacements&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1NE5uKOzJmtaYLGtLC1y-1">
+          <mxGeometry x="304.5" y="762" width="151" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1NE5uKOzJmtaYLGtLC1y-23" target="1NE5uKOzJmtaYLGtLC1y-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="910" y="500" />
+              <mxPoint x="910" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1NE5uKOzJmtaYLGtLC1y-23" target="1NE5uKOzJmtaYLGtLC1y-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1NE5uKOzJmtaYLGtLC1y-23" target="1NE5uKOzJmtaYLGtLC1y-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="910" y="500" />
+              <mxPoint x="910" y="755" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NE5uKOzJmtaYLGtLC1y-23" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="470" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
