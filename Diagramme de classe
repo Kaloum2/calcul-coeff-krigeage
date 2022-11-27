@@ -1,0 +1,27 @@
+<mxfile host="app.diagrams.net" modified="2022-11-26T19:33:11.465Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56" etag="DSvcRA3h6u8HbhimlKBH" version="20.6.0" type="gitlab">
+  <diagram id="_TlGhns4z1thp1N7cxjN" name="Page-1">
+    <mxGraphModel dx="460" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0rG9LE7sSrIxXovhvb4e-4" value="Matrice" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1" collapsed="1">
+          <mxGeometry x="100" y="670" width="80" height="30" as="geometry">
+            <mxRectangle x="550" y="160" width="200" height="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0rG9LE7sSrIxXovhvb4e-9" value="Coload" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="220" width="630" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="0rG9LE7sSrIxXovhvb4e-10" value="+ fgeo : string (chemin sortie)&#xa;+ fpar : string (chemin sortie)&#xa;+ d0 : double (correlation distance km)&#xa;+ l0 : double (longitude origine rad)&#xa;+ f0 : double (latitude origine rad)&#xa;+ _pf : ifstream&#xa;+ _WKR : vector&lt;wkr&gt;&#xa;+ WKR : vector&lt;wkr&gt;&#xa;+ G : vector&lt;geo&gt;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="0rG9LE7sSrIxXovhvb4e-9" vertex="1">
+          <mxGeometry y="26" width="630" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="0rG9LE7sSrIxXovhvb4e-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="0rG9LE7sSrIxXovhvb4e-9" vertex="1">
+          <mxGeometry y="160" width="630" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="0rG9LE7sSrIxXovhvb4e-12" value="+Coload (d, l, f, geo, par) : void&#xa;+Coload (geo, par) : void&#xa;+Coload() : void&#xa;+init(string blq) : void&#xa;+intpl_ol(geo g,double amp[3][11], double phs[3][11]) : void&#xa;+_sca_prod(double v[],vector&lt;wkr&gt; W,int ind) : double&#xa;+ocload(double mjd, double amp[3][11], double phs[3][11],double ang[11], double neu[3]) : void&#xa;+arg_ocn(double mjd, double angl[11]) : void&#xa;+load_kr(string filgeo, string filpar,int nsta,double d0,double l0,double f0,vector&lt;geo&gt; G,vector&lt;wkr&gt; WKR) : void&#xa;+_mat_cov(vector&lt;geo&gt; G, double d0, double l0, double f0) : Matrice&#xa;+_v_cov(vector&lt;geo&gt; G,geo g,double d0,double l0,double f0,double v[]) : void&#xa;+_f_cov(double d, double d0) : double&#xa;+_dis(geo g1, geo g2) : double&#xa;+rd_ocn_table(string filocn,vector&lt;ocnsta&gt; &amp;ASTA) : void&#xa;+rd_ocn_sta(string filocn,string stain, ocnsta &amp;osta) : bool&#xa;+kr_ocn(vector&lt;ocnsta&gt; ASTA) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="0rG9LE7sSrIxXovhvb4e-9" vertex="1">
+          <mxGeometry y="168" width="630" height="262" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
